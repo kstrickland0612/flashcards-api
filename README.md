@@ -31,15 +31,17 @@ Database is deployed at https://guarded-falls-36337.herokuapp.com/
 
 ## Routes
 
-* POST /sign-up users#signup
-* POST /sign-in users#signin
-* DELETE /sign-out users#sign-out
-* PATCH /change-password users#changepw
-* GET /cards cards#index
-* Get /cards/:id cards#show
-* POST /cards cards#create
-* PATCH /cards:id cards#update
-* DELETE /cards/:id cards#destroy
+| Verb   | URI Pattern      | Controller#Action |
+|--------|------------------|-------------------|
+| POST   | /sign-up         | users#signup      |
+| POST   | /sign-in         | users#signin      |
+| DELETE | /sign-out        | users#sign-out    |
+| PATCH  | /change-password | users#changepw    |
+| GET    | /cards           | cards#index       |
+| GET    | /cards/:id       | cards#show        |
+| POST   | /cards           | cards#create      |
+| PATCH  | /cards:id        | cards#update      |
+| DELETE | /cards/:id       | cards#destroy     |
 
 ## Wanna try it?
 ### [You can use Flash here!](https://kstrickland0612.github.io/flashcards-client/#/)
